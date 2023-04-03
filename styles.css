@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Righteous&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Poppins";
+}
+
+a {
+  color: #f15024;
+}
+
+a:hover {
+  color: #f7af30;
+  background-color: #f15024;
+  transition: 2s;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.header-icon:hover {
+  color: #f7af30;
+}
+/* header section to style */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  border: #f15024 solid 2px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.website-name {
+  /* border: 2px solid #f15024; */
+  border-radius: 30px;
+  background-color: white;
+  color: #f15024;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-icon {
+  color: #f15024;
+  font-size: x-large;
+  vertical-align: -2px;
+}
+
+nav {
+  text-align: center;
+  justify-content: center;
+}
+
+.nav_item {
+  /* border: #f15024 solid 2px; */
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  list-style: none;
+  padding: 5px;
+  font-size: large;
+}
+
+.side-by-side li {
+  display: inline;
+  width: 100%;
+  list-style: none;
+}
+.ramble {
+  color: #f7af30;
+}
+button {
+  background-color: #f15024;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: #f7af30 0px 10px 38px, #f7af30 0px 10px 12px;
+  transition: ease-in-out 0.4s;
+  border-style: solid;
+  border-color: white;
+}
+/* ------------------------------------ */
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #f15024;
+  position: relative;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #f1502465;
+  opacity: 1;
+  backdrop-filter: blur(5px);
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card:hover .card-body {
+  right: 0;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.card-sub-title {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-sub-title {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  /* overflow-y: scroll; */
+}
+
+.card-info {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+/* Styling the search bar plus the "Im craving..." */
+
+img {
+  border-radius: 30px;
+  min-height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #f7af30;
+  border: #f15024 solid 2px;
+  border-radius: 20px;
+}
+
+section {
+  width: 90%;
+  height: 100% auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-image: url(https://img.freepik.com/free-photo/local-food-meal-composition-with-copy-space_23-2148833777.jpg?size=626&ext=jpg&ga=GA1.1.531614703.1680044060&semt=sph);
+ background-image: none;
+ background-size: contain;
+ background-attachment: scroll;
+ background-repeat: no-repeat; */
+}
+
+.im-craving {
+  font-size: 2rem;
+  text-align: center;
+  color: #fffff0;
+  border: #f15024 2px solid;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.im-craving span {
+  color: #f15024;
+  font-size: 2rem;
+  vertical-align: -6px;
+}
+
+.im-craving span:hover {
+  cursor: pointer;
+}
+
+.input-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: none;
+  display: inline-block;
+}
+
+/* ------------------------------------- */
+
+/* Styling the results that will apear */
+
+.all-results {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+  border: #f15024 solid 2px;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container {
+  margin-top: 10px;
+  text-align: center;
+
+  border-radius: 30px;
+
+  padding: 5px;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+}
+
+.item-calories {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.url {
+  display: block;
+  border: 1px #f15024 solid;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #f15024;
+  cursor: pointer;
+}
+
+/* inside bullet point list css */
+
+.card-sub-title {
+  float: right;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.kcal {
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.amount {
+  font-weight: 800;
+}
+
+.cal {
+  color: white;
+}
+
+.error {
+  text-align: center;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+}

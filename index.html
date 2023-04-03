@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Practice</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="website-name">
+        <h1>
+          <a href="recipe-ramble.html"
+            ><span class="header-icon material-symbols-rounded">
+              local_dining
+            </span></a
+          >
+          Recipe
+          <span class="ramble">Ramble</span>
+        </h1>
+      </div>
+      <nav>
+        <ul class="side-by-side">
+          <li class="nav_item">
+            <a href="random-recipes.html">Random Recipe</a>
+          </li>
+          <li class="nav_item"><a href="#about">About</a></li>
+          <li class="nav_item"><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <a target="_blank" href="https://www.youtube.com/watch?v=q-Y0bnx6Ndw"
+        ><button class="nav-button button glow-button" type="button">
+          More..
+        </button></a
+      >
+    </header>
+
+    <main>
+      <section>
+        <div class="input-form">
+          <div class="im-craving">
+            <p>
+              <span class="material-symbols-outlined"> restaurant </span>
+              I'm Craving...
+            </p>
+          </div>
+          <form>
+            <input
+              class="search-bar"
+              type="text"
+              id="input"
+              placeholder="Search..."
+              minlength=""
+            />
+          </form>
+        </div>
+
+        <div class="intro-card">
+          <div class="card">
+            <img
+              src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-be3500.jpg"
+              alt=""
+              class="card-img"
+            />
+            <div class="card-body">
+              <h1 class="card-title">What to Eat?</h1>
+              <p class="card-sub-title">
+                Using Harvard’s Healthy Eating Plate as a guide, we recommend
+                eating mostly vegetables, fruit, and whole grains, healthy fats,
+                and healthy proteins. We suggest drinking water instead of
+                sugary beverages, and we also address common dietary concerns
+                such as salt and sodium, vitamins, and alcohol. It’s also
+                important to stay active and maintain a healthy weight.
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aperiam ratione praesentium ad nobis, omnis totam saepe quos
+                deleniti itaque vitae laborum magnam, quo quas quasi velit
+                eligendi minus. Laborum, assumenda!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="all-results"></div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- <div class="item">
+            <div class="card">
+              <img
+                src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-be3500.jpg"
+                alt=""
+                class="card-img"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Nutrition Facts</h1>
+                <p class="card-sub-title"></p>
+              </div>
+            </div>
+            <div class="container">
+              <h1 class="title">${title}</h1>
+              <a href="#" target="_blank">View Recipe</a>
+            </div>
+            <p class="item-data">Calories: ${calories}</p>
+          </div>
+
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-be3500.jpg"
+                alt=""
+                class="card-img"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Nutrition Facts</h1>
+                <p class="card-sub-title">
+                  <div class="block">
+                    <div class="kcal">1200 kcal</div>
+                    <div></div>
+
+                    <div><li>PROTEIN</li></div>
+                    <div class="amount">1 G</div>
+                    <div><li>CARB</li></div>
+                    <div class="amount">2 G</div>
+                    <div><li>FAT</li></div>
+                    <div class="amount">3 G</div>
+                    <div></div>
+                    <div></div>
+                    <div><li>CHOLESTEROL</li></div>
+                    <div class="amount">32 MG</div>
+                    <div><li>SODIUM</li></div>
+                    <div class="amount">986 MG</div>
+                    <div><li>CALCIUM</li></div>
+                    <div class="amount">81 MG</div>
+                    <div><li>POTASSIUM</li></div>
+                    <div class="amount">1003 MG</div>
+                    <div><li>IRON</li></div>
+                    <div class="amount">4 MG</div>
+                  </div>
+                </p>
+              </div>
+            </div>
+            <div class="container">
+              <h1 class="title">${title}</h1>
+              <a href="#" target="_blank">View Recipe</a>
+              <p class="item-data">Calories: ${calories}</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-03/plant-based-food-mc-220323-be3500.jpg"
+                alt=""
+                class="card-img"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Nutrition Facts</h1>
+                <p class="card-sub-title">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatibus accusamus id unde dolore hic voluptate
+                  cupiditate. Sint ad dignissimos aspernatur, architecto
+                  explicabo, impedit omnis dolorum aliquam aperiam, iusto
+                  praesentium Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Sit hic, in similique reprehenderit
+                  temporibus alias animi fugit error repellat, minima, nemo
+                  officia corrupti dolore! Architecto iste numquam sed ratione
+                  molestiae.
+                </p>
+              </div>
+            </div>
+            <div class="container">
+              <h1 class="title">${title}</h1>
+              <p class="item-data">Calories: ${calories}</p>
+              <button type="button" class="this card-button">
+                View Recipe
+              </button>
+            </div>
+          </div> -->
+<!-- <div class="item">
+            <div class="search-result">
+              <img
+                src="https://img.freepik.com/free-photo/assorted-healthy-citrus-fruits-bright-red-background-ripe-peaches-apples-oranges-bananas-grapes-avocado-your-healthy-nutrition-set-nutritious-food-balanced-diet-clean-eating_273609-38009.jpg?w=1060&t=st=1680214577~exp=1680215177~hmac=458bade470c987362e74fd7f555da7bc3981b7ef7c26e950cc63c6a3419b4aaf"
+              />
+              <div class="container">
+                <h1 class="title">${title}</h1>
+                <a href="#" target="_blank">View Recipe</a>
+              </div>
+              <p class="item-data">Calories: ${calories}</p>
+            </div>
+          </div> -->
